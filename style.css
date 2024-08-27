@@ -14,3 +14,19 @@
 
 
 /* Begynd her... */
+
+.grid_1-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.flex{
+    display: flex;
+    text-wrap: wrap;
+}
+
+img{
+    border-radius: 100%;
+    align-self: center;
+}
