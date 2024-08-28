@@ -1,2 +1,22 @@
 /* Dine styles her */
-article {}
+article > * {
+    --flow-space: 0.5rlh;
+    margin-top: var(--flow-space);
+    margin-bottom: var(--flow-space);
+  }
+  
+  /* 2. Sæt --flow-space til 2rlh for h2 */
+  article h2 {
+    --flow-space: 2rlh;
+  }
+  
+  /* 3. Sæt --flow-space til 1rlh for h3 */
+  article h3 {
+    --flow-space: 1rlh;
+  }
+  
+  /* 4. Reducér --flow-space til .25rlh for alle elementer der kommer efter h3 */
+  article h3 + * {
+    --flow-space: 0.25rlh;
+  }
+  
