@@ -9,11 +9,25 @@
     --font-heading: 1.75rem;
 
     /* Når du synes, du er færdig, så ændr værdien herunder til '1' for at se dit resultat i browseren */
-    --hide-overlay: 0;
+    --hide-overlay: 1;
 }
 
 
 /* Begynd her... */
+body{
+    background-color: #E3EDFB;
+}
+
+h1{
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+p{
+    margin-bottom: 1rem;
+    color: rgb(41, 141, 108);
+}
 
 .grid_1-1{
     display: grid;
@@ -21,12 +35,29 @@
     gap: 1em;
 }
 
-.flex{
+.grid_1-1 div:first-child {
     display: flex;
-    text-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+.flex{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+}
+
+svg{
+fill: var(--color-icon);
+height: 25px;
+width: 25px;
 }
 
 img{
     border-radius: 100%;
     align-self: center;
+    height: auto;
+    width: 8rem;
+    margin-top: 1rem;
+    font-style: bold;
 }
