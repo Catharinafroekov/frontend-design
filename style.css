@@ -1,4 +1,20 @@
 article {
-    max-width: 65ch;
+    --popout: 2rem;
     margin-inline: auto;
+    display: grid;
+    grid-template-columns: [full-start]1fr [popout-start]var(--popout) [content]minmax(0, 65ch) var(--popout)[popout-end] 1fr[full-end];
+
+    >*{
+        grid-column: content;
+    }
+
+    img{
+        grid-column:full;
+        /* samme som ovenstående 
+        grid-column:full-start / full-end; */
+    }
+
+    blockquote{
+        grid-column: popout;
+    }
 }
